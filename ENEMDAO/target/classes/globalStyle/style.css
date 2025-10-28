@@ -1,0 +1,203 @@
+/* ========================================== FUNDO GLOBAL ================================================================================== */
+.root {
+    -fx-font-family: "Garamond", "Times New Roman", serif;
+    -fx-background-color: #0C0B0B;
+  }
+  
+  /* ========================================== LABELS GERAIS =============================================================================== */
+  .label {
+      -fx-text-fill: #FFFFFF !important; /* Força texto branco em todos os labels */
+  }
+  
+  /* =================================== MENU LATERAL ================================================================================== */
+  .area-padrao {
+    -fx-background-color: linear-gradient(to bottom, #1A1814, #2D2A24);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 15, 0, 0, 3);
+    -fx-border-color: #8B6B3D;
+    -fx-border-width: 0 1 0 0;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-padding: 0 10 10 10;
+    -fx-pref-height: Infinity;
+  }
+  
+  /* =================================== CABEÇALHO =============================================================================== */
+  .cabecalho {
+    -fx-background-color: linear-gradient(to right, #1A1814, #2D2A24);
+    -fx-padding: 15 20;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #8B6B3D;
+  }
+  
+  .titulo-principal {
+      -fx-font-family: "Garamond", "Times New Roman", serif;
+      -fx-font-size: 24px;	
+      -fx-font-weight: bold;
+      -fx-text-fill: #D4AF37;
+      -fx-effect: dropshadow( one-pass-box , rgba(212, 175, 55, 0.6) , 6, 0.0 , 0 , 1 );
+  }
+  
+  .relogio-label {
+      -fx-font-size: 16pt;
+      -fx-text-fill: #F5F5DC;
+      -fx-font-family: "Garamond", "Times New Roman", serif;
+      -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6) , 3, 0.0 , 1, 1 );
+  }
+  
+  .estacao-label {
+      -fx-font-size: 12pt;
+      -fx-text-fill: #C5B358;
+      -fx-font-style: italic;
+      -fx-font-family: "Garamond", "Times New Roman", serif;
+  }
+  
+  .nome-usuario {
+      -fx-font-size: 16px;
+      -fx-font-weight: bold;
+      -fx-text-fill: #D4AF37;
+      -fx-padding: 0 10 0 0;
+      -fx-font-family: "Garamond", "Times New Roman", serif;
+  }
+  
+  /* ======================================== CAMPOS DE FORMULÁRIO ======================================================================== */
+  .text-field {
+      -fx-background-color: #000000;
+      -fx-text-fill: #FFFFFF; /* Texto branco */
+      -fx-border-color: #444444;
+      -fx-border-radius: 4;
+      -fx-background-radius: 4;
+      -fx-padding: 6;
+      -fx-font-family: "Garamond", "Times New Roman", serif;
+  }
+  
+  .text-field:focused {
+      -fx-border-color: #D4AF37;
+      -fx-border-width: 2;
+  }
+  
+  .text-area {
+      -fx-background-color: #000000;
+      -fx-text-fill: #FFFFFF; /* Texto branco */
+      -fx-border-color: #444444;
+      -fx-border-radius: 4;
+      -fx-background-radius: 4;
+      -fx-padding: 6;
+      -fx-font-family: "Garamond", "Times New Roman", serif;
+  }
+  
+  .text-area .content {
+      -fx-background-color: #000000;
+      -fx-text-fill: #FFFFFF; /* Texto branco no conteúdo */
+  }
+  
+  .text-area:focused {
+      -fx-border-color: #D4AF37;
+      -fx-border-width: 2;
+  }
+  
+  .combo-box {
+      -fx-background-color: #000000;
+      -fx-text-fill: #FFFFFF; /* Texto branco */
+      -fx-border-color: #444444;
+      -fx-border-radius: 4;
+      -fx-background-radius: 4;
+  }
+  
+  .combo-box .list-cell {
+      -fx-background-color: #000000;
+      -fx-text-fill: #FFFFFF; /* Texto branco nos itens */
+  }
+  
+  .combo-box-popup .list-view {
+      -fx-background-color: #000000;
+  }
+  
+  .combo-box-popup .list-cell {
+      -fx-background-color: #000000;
+      -fx-text-fill: #FFFFFF; /* Texto branco no popup */
+  }
+  
+  .combo-box-popup .list-cell:filled:hover {
+      -fx-background-color: #333333;
+      -fx-text-fill: #FFFFFF;
+  }
+  
+  /* ========================================== BOTÕES ================================================================================ */
+  .button {
+      -fx-background-color: transparent;
+      -fx-text-fill: #F5F5DC;
+      -fx-font-size: 14px;
+      -fx-font-weight: normal;
+      -fx-alignment: CENTER_LEFT;
+      -fx-padding: 10 18 10 15;
+      -fx-cursor: hand;
+      -fx-graphic-text-gap: 12px;
+      -fx-font-family: "Garamond", "Times New Roman", serif;
+  }
+  
+  .button:hover {
+      -fx-background-color: rgba(212, 175, 55, 0.15);
+      -fx-text-fill: #D4AF37;
+      -fx-border-color: #D4AF37;
+      -fx-border-width: 0 0 0 3;
+  }
+  
+  .font-Icon {
+      -fx-icon-size: 18px;
+      -fx-fill: #C5B358;
+  }
+  
+  .button:hover .font-Icon {
+      -fx-fill: #D4AF37;
+  }
+  
+  .button02 {
+      -fx-background-color: linear-gradient(to bottom, #D4AF37, #C5B358);
+      -fx-text-fill: #1A1814;
+      -fx-font-size: 14px;
+      -fx-font-weight: bold;
+      -fx-alignment: CENTER;
+      -fx-padding: 10 20;
+      -fx-cursor: hand;
+      -fx-background-radius: 4;
+      -fx-border-radius: 4;
+      -fx-font-family: "Garamond", "Times New Roman", serif;
+      -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.3) , 4, 0.0 , 0 , 2 );
+  }
+  
+  .button02:hover {
+      -fx-background-color: linear-gradient(to bottom, #FFD700, #D4AF37);
+      -fx-text-fill: #000000;
+      -fx-effect: dropshadow( gaussian , rgba(212, 175, 55, 0.5) , 6, 0.0 , 0 , 3 );
+  }
+  
+  /* ========================================== TABLEVIEW =============================================================================== */
+  .table-view {
+      -fx-background-color: #000000;
+      -fx-text-fill: #FFFFFF;
+  }
+  
+  .table-view .column-header {
+      -fx-background-color: #2D2A24;
+      -fx-text-fill: #FFFFFF;
+      -fx-font-weight: bold;
+  }
+  
+  .table-view .table-cell {
+      -fx-text-fill: #FFFFFF;
+      -fx-border-color: #444444;
+  }
+  
+  .table-row-cell {
+      -fx-background-color: #000000;
+      -fx-text-fill: #FFFFFF;
+  }
+  
+  .table-row-cell:odd {
+      -fx-background-color: #1A1814;
+  }
+  
+  .table-row-cell:selected {
+      -fx-background-color: #D4AF37;
+      -fx-text-fill: #000000;
+  }

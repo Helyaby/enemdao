@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="crud_questao.QuestaoCreateController"
+            prefWidth="600" prefHeight="400"
+            stylesheets="@/globalStyle/style.css">
+
+    <VBox spacing="10" layoutX="20" layoutY="20" prefWidth="560">
+        <Label text="Cadastro de Questão ENEM" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #D4AF37;"/>
+        
+        <HBox spacing="10">
+            <Label text="Ano:"/>
+            <TextField fx:id="txtAno" promptText="Ex: 2023"/>
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Cor do Caderno:"/>
+            <ComboBox fx:id="comboCorCaderno" prefWidth="150"/>
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Número da Questão:"/>
+            <TextField fx:id="txtNumeroQuestao" promptText="Ex: 1"/>
+        </HBox>
+
+        <VBox spacing="5">
+            <Label text="Questão:"/>
+            <TextArea fx:id="txtQuestao" prefRowCount="8" wrapText="true"/>
+        </VBox>
+
+        <HBox spacing="15">
+            <Button text="Salvar" onAction="#salvarQuestao" styleClass="button02"/>
+            <Button text="Limpar" onAction="#limparCampos" styleClass="button02"/>
+        </HBox>
+    </VBox>
+</AnchorPane>

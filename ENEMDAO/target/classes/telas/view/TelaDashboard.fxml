@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      spacing="20" alignment="TOP_CENTER"
+      stylesheets="@/globalStyle/style.css">
+    
+    <Label text="📊 Dashboard do Sistema de Questões ENEM"
+           style="-fx-font-size: 20px; -fx-text-fill: #D4AF37; -fx-font-weight: bold;"/>
+
+    <HBox spacing="30">
+        <VBox spacing="10" style="-fx-background-color: #2D2A24; -fx-padding: 20; -fx-border-radius: 5; -fx-background-radius: 5;">
+            <Label text="Total de Questões:" style="-fx-text-fill: #FFFFFF;"/>
+            <Label text="0" style="-fx-font-size: 24px; -fx-text-fill: #D4AF37;" />
+        </VBox>
+
+        <VBox spacing="10" style="-fx-background-color: #2D2A24; -fx-padding: 20; -fx-border-radius: 5; -fx-background-radius: 5;">
+            <Label text="Questões Cadastradas (mês):" style="-fx-text-fill: #FFFFFF;"/>
+            <Label text="0" style="-fx-font-size: 24px; -fx-text-fill: #D4AF37;" />
+        </VBox>
+    </HBox>
+
+</VBox>

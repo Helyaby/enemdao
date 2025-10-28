@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="crud_questao.QuestaoListController"
+            prefWidth="900"
+            prefHeight="600"
+            stylesheets="@/globalStyle/style.css">
+
+    <VBox spacing="15">
+        <padding>
+            <Insets top="15" right="15" bottom="15" left="15"/>
+        </padding>
+
+        <children>
+            <!-- ===================================== -->
+            <!-- Título da tela -->
+            <Label text="Gerenciamento de Questões ENEM"
+                   styleClass="titulo-principal"/>
+
+            <!-- ===================================== -->
+            <!-- Tabela de questões -->
+            <TableView fx:id="tableQuestoes" prefHeight="450">
+                <columns>
+                    <TableColumn fx:id="colId" text="ID" prefWidth="60"/>
+                    <TableColumn fx:id="colAno" text="Ano" prefWidth="80"/>
+                    <TableColumn fx:id="colCorCaderno" text="Cor do Caderno" prefWidth="120"/>
+                    <TableColumn fx:id="colNumeroQuestao" text="Nº Questão" prefWidth="100"/>
+                    <TableColumn fx:id="colQuestao" text="Questão" prefWidth="500"/>
+                </columns>
+            </TableView>
+
+            <!-- ===================================== -->
+            <!-- Botões -->
+            <HBox spacing="15">
+                <Button text="Nova Questão" onAction="#abrirCadastro" styleClass="button02"/>
+                <Button text="Editar" onAction="#editarQuestao" styleClass="button02"/>
+                <Button text="Excluir" onAction="#excluirQuestao" styleClass="button02"/>
+            </HBox>
+        </children>
+    </VBox>
+</AnchorPane>
